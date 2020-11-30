@@ -47,7 +47,7 @@
                         <form method="POST" class="register-form" id="login-form">
                             <div class="form-group">
                                 <label for="your_name"><i class="zmdi zmdi-account material-icons-name"></i></label>
-                                <input type="text" name="your_name" id="your_name" placeholder="Your Name"/>
+                                <input type="text" name="your_name" id="your_name" placeholder="Username"/>
                             </div>
                             <div class="form-group">
                                 <label for="your_pass"><i class="zmdi zmdi-lock"></i></label>
@@ -58,7 +58,7 @@
                                 <label for="remember-me" class="label-agree-term"><span><span></span></span>Remember me</label>
                             </div>
                             <div class="form-group form-button">
-                                <input type="submit" name="signin" id="signin" class="form-submit" value="Log in"/>
+                                    <button  onclick="signUp(); return false;">Login</button>
                             </div>
                         </form>
                     </div>
@@ -71,5 +71,35 @@
     <!-- JS -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="js/main.js"></script>
+
+    <!-- JS -->
+    <script> 
+    
+        Parse.initialize("Um5azHXQfLSlYJVJqg2pL6SkQcJVXcLPyTNt1V4P", "6b1GVky3F5euaOWpggwgqigBlJ3NHNxswYeFaRyy"); 
+        Parse.serverURL = "https://parseapi.back4app.com/";
+
+        function signUp(){
+        var usernameText = document.getElementById("username").value.toString();
+        var emailText =  document.getElementById("email").value.toString();
+        var passwordText = document.getElementById("password").value.toString();
+        
+      
+        var user = new Parse.User();
+               user.save({
+            username: usernameText,
+            email: emailText,
+            password: passwordText
+        }).then(function(response) {
+            alert('New object create with success! ObjectId: ' + response.id + ', '+ user.get('username'));
+        }).catch(function(error) {
+            alert('Error: ' + error.message);
+        });
+       
+        return false;
+        }
+        
+
+    </script>
+
 </body><!-- This templates was made by Colorlib (https://colorlib.com) -->
 </html>

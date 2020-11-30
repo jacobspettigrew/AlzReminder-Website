@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sign Up Form by Colorlib</title>
+    <title>AlzReminders</title>
 
     <!-- Font Icon -->
     <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
@@ -25,7 +25,7 @@
                 <div class="signin-content">
                     <div class="signin-image">
                         <figure><img src="images/alzRemindersLogo.png" alt="AlzReminders App"></figure>
-                        <a href="signUp.html" class="signup-image-link">Create an account</a>
+                        <a href="index.html" class="signup-image-link">Already have an account</a>
                     </div>
 
                     <div class="signin-form">
@@ -33,7 +33,11 @@
                         <form method="POST" class="register-form" id="login-form">
                             <div class="form-group">
                                 <label for="your_name"><i class="zmdi zmdi-account material-icons-name"></i></label>
-                                <input type="text" name="your_name" id="username" placeholder="Your Name"/>
+                                <input type="text" name="your_name" id="username" placeholder="Username"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="your_pass"><i class="zmdi zmdi-lock"></i></label>
+                                <input type="email" name="email" id="email" placeholder="Email"/>
                             </div>
                             <div class="form-group">
                                 <label for="your_pass"><i class="zmdi zmdi-lock"></i></label>
@@ -43,16 +47,12 @@
                                 <label for="re-pass"><i class="zmdi zmdi-lock-outline"></i></label>
                                 <input type="password" name="re_pass" id="re_pass" placeholder="Repeat your password"/>
                             </div>
-                            <div class="form-group">
-                                <label for="your_pass"><i class="zmdi zmdi-lock"></i></label>
-                                <input type="email" name="email" id="email" placeholder="Email"/>
-                            </div>
                             <!--<div class="form-group">
                                 <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
                                 <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all statements in  <a href="#" class="term-service">Terms of service</a></label>
                             </div>*/-->
                             <div class="form-group form-button">
-                                    <button  onclick="signup(); return false;">Click me</button>
+                                    <button  onclick="signUp(); return false;">Create Account</button>
                              
                             </div>
                         </form>
@@ -66,13 +66,14 @@
     <!-- JS -->
     <script> 
     
-    Parse.initialize("Um5azHXQfLSlYJVJqg2pL6SkQcJVXcLPyTNt1V4P", "6b1GVky3F5euaOWpggwgqigBlJ3NHNxswYeFaRyy"); 
+        Parse.initialize("Um5azHXQfLSlYJVJqg2pL6SkQcJVXcLPyTNt1V4P", "6b1GVky3F5euaOWpggwgqigBlJ3NHNxswYeFaRyy"); 
         Parse.serverURL = "https://parseapi.back4app.com/";
 
-        function signup(){
+        function signUp(){
         var usernameText = document.getElementById("username").value.toString();
-        var passwordText = document.getElementById("password").value.toString();
         var emailText =  document.getElementById("email").value.toString();
+        var passwordText = document.getElementById("password").value.toString();
+        
       
         var user = new Parse.User();
                user.save({
