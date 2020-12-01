@@ -14,7 +14,6 @@
 
     <script type="text/javascript" src="https://npmcdn.com/parse/dist/parse.min.js">   
     </script>
-    <script type="text/javascript" src="scripts/behaviour.js"></script>
 </head>
 <body>
 
@@ -62,7 +61,6 @@
                             </div>*/-->
                             <div class="form-group form-button">
                                     <button  onclick="signUp(); return false;">Create Account</button>
-                             
                             </div>
                         </form>
                     </div>
@@ -73,37 +71,34 @@
     </div>
 
     <!-- JS -->
-    <!--<script> 
+    <script> 
     
         Parse.initialize("Um5azHXQfLSlYJVJqg2pL6SkQcJVXcLPyTNt1V4P", "6b1GVky3F5euaOWpggwgqigBlJ3NHNxswYeFaRyy"); 
         Parse.serverURL = "https://parseapi.back4app.com/";
 
         function signUp(){
-        var firstnameText = document.getElementById("first_name").value.toString();
-        var lastnameText = document.getElementById("last_name").value.toString();
-        var usernameText = document.getElementById("username").value.toString();
-        var emailText =  document.getElementById("email").value.toString();
-        var passwordText = document.getElementById("password").value.toString();
+            var firstnameText = document.getElementById("first_name").value.toString();
+            var lastnameText = document.getElementById("last_name").value.toString();
+            var usernameText = document.getElementById("username").value.toString();
+            var emailText =  document.getElementById("email").value.toString();
+            var passwordText = document.getElementById("password").value.toString();
         
-      
-        var user = new Parse.User();
+            var user = new Parse.User();
                user.save({
-            first_name: firstnameText,
-            last_name: lastnameText,
-            username: usernameText,
-            email: emailText,
-            password: passwordText
-        }).then(function(response) {
+                first_name: firstnameText,
+                last_name: lastnameText,
+                username: usernameText,
+                email: emailText,
+                password: passwordText
+            }).then(function(response) {window.location.href = 'login.html';
             alert('New object create with success! ObjectId: ' + response.id + ', '+ user.get('username'));
-        }).catch(function(error) {
+            }).catch(function(error) {
             alert('Error: ' + error.message);
-        });
+            });
        
-        return false;
+            return false;
 		}
-        
-
-    </script>-->
+    </script>
 
 </body><!-- This templates was made by Colorlib (https://colorlib.com) -->
 </html>

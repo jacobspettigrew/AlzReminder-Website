@@ -1,0 +1,677 @@
+{
+"results" : [
+
+  {
+    "objectId": "BVpB1tHD5y",
+    "email": "john@gmail.com",
+    "username": "john",
+    "createdAt": "2020-10-26T02:41:11.535Z",
+    "updatedAt": "2020-11-03T04:28:33.181Z",
+    "strings": "hello world!",
+    "patientId": "",
+    "arrayToDos": [
+      "Enter taskgg"
+    ],
+    "ACL": {
+      "*": {
+        "read": true
+      },
+      "BVpB1tHD5y": {
+        "read": true,
+        "write": true
+      }
+    }
+  },
+  {
+    "objectId": "CvJwla4cHc",
+    "email": "john1@gmail.com",
+    "username": "john1",
+    "createdAt": "2020-10-26T02:42:04.425Z",
+    "updatedAt": "2020-10-26T09:50:32.593Z",
+    "strings": "hello world!",
+    "ACL": {
+      "*": {
+        "read": true
+      },
+      "CvJwla4cHc": {
+        "read": true,
+        "write": true
+      }
+    }
+  },
+  {
+    "objectId": "tqP60CPN15",
+    "last_name": "kk",
+    "first_name": "kk",
+    "email": "bob1@yahoo.com",
+    "username": "bob1",
+    "createdAt": "2020-10-26T02:46:41.465Z",
+    "updatedAt": "2020-10-26T02:46:41.465Z",
+    "ACL": {
+      "*": {
+        "read": true
+      },
+      "tqP60CPN15": {
+        "read": true,
+        "write": true
+      }
+    }
+  },
+  {
+    "objectId": "jAlU3bDrEf",
+    "last_name": "dd",
+    "first_name": "jacob",
+    "email": "jacob@gmail.com",
+    "username": "jacob",
+    "createdAt": "2020-10-29T04:21:39.602Z",
+    "updatedAt": "2020-11-03T04:45:12.875Z",
+    "patientId": "EWlqzLPEut",
+    "connectToPatient": true,
+    "ACL": {
+      "*": {
+        "read": true
+      },
+      "jAlU3bDrEf": {
+        "read": true,
+        "write": true
+      }
+    }
+  },
+  {
+    "objectId": "tBrGsvOPx2",
+    "last_name": "pettigrew",
+    "first_name": "jacob",
+    "email": "123@gmail.com",
+    "username": "jacobsp",
+    "createdAt": "2020-10-31T06:47:27.485Z",
+    "updatedAt": "2020-10-31T06:47:27.485Z",
+    "ACL": {
+      "*": {
+        "read": true
+      },
+      "tBrGsvOPx2": {
+        "read": true,
+        "write": true
+      }
+    }
+  },
+  {
+    "objectId": "WvLbYoHzNv",
+    "last_name": "smith",
+    "first_name": "joe",
+    "email": "joesmith@gmail.com",
+    "username": "joesmith",
+    "createdAt": "2020-10-31T06:53:28.066Z",
+    "updatedAt": "2020-11-04T20:59:49.751Z",
+    "patientId": "ebA2RLXmyi",
+    "connectToPatient": true,
+    "ACL": {
+      "*": {
+        "read": true
+      },
+      "WvLbYoHzNv": {
+        "read": true,
+        "write": true
+      }
+    }
+  },
+  {
+    "objectId": "Ptd1MIZWdI",
+    "last_name": "last",
+    "first_name": "kc",
+    "email": "kc@gmail.com",
+    "username": "kc",
+    "createdAt": "2020-10-31T07:08:31.090Z",
+    "updatedAt": "2020-11-03T05:07:52.283Z",
+    "patientId": "yLRmE9xSFl",
+    "connectToPatient": true,
+    "arrayToDos": [
+      "kc is.here"
+    ],
+    "ACL": {
+      "*": {
+        "read": true
+      },
+      "Ptd1MIZWdI": {
+        "read": true,
+        "write": true
+      }
+    }
+  },
+  {
+    "objectId": "ZoPwXBffTB",
+    "last_name": "k",
+    "first_name": "h",
+    "email": "pc@gmail.com",
+    "username": "pc",
+    "createdAt": "2020-10-31T14:48:50.410Z",
+    "updatedAt": "2020-10-31T14:48:50.410Z",
+    "ACL": {
+      "*": {
+        "read": true
+      },
+      "ZoPwXBffTB": {
+        "read": true,
+        "write": true
+      }
+    }
+  },
+  {
+    "objectId": "P7aRSXrrf6",
+    "last_name": "p",
+    "first_name": "p",
+    "email": "p@gmail.com",
+    "username": "p",
+    "connectToPatient": true,
+    "arrays": [
+      "init"
+    ],
+    "array": [
+      "init"
+    ],
+    "a": [],
+    "createdAt": "2020-11-03T04:48:26.575Z",
+    "updatedAt": "2020-11-03T05:07:33.027Z",
+    "patientId": "pUb5w9q8ah",
+    "arrayToDos": [
+      "id p is here"
+    ],
+    "ACL": {
+      "*": {
+        "read": true
+      },
+      "P7aRSXrrf6": {
+        "read": true,
+        "write": true
+      }
+    }
+  },
+  {
+    "objectId": "w0D9v2HX5k",
+    "last_name": "k",
+    "first_name": "k",
+    "email": "k@gmail.com",
+    "username": "k",
+    "connectToPatient": true,
+    "arrays": [
+      "init"
+    ],
+    "array": [
+      "init"
+    ],
+    "a": [],
+    "createdAt": "2020-11-03T05:09:06.901Z",
+    "updatedAt": "2020-11-03T05:09:34.330Z",
+    "patientId": "xYEA1VLYjy",
+    "arrayToDos": [
+      "id is k"
+    ],
+    "ACL": {
+      "*": {
+        "read": true
+      },
+      "w0D9v2HX5k": {
+        "read": true,
+        "write": true
+      }
+    }
+  },
+  {
+    "objectId": "NEMJZRg1SL",
+    "last_name": "a",
+    "first_name": "a",
+    "email": "a@gmail.com",
+    "username": "a",
+    "connectToPatient": true,
+    "arrays": [
+      "init"
+    ],
+    "array": [
+      "init"
+    ],
+    "a": [],
+    "createdAt": "2020-11-03T05:14:02.595Z",
+    "updatedAt": "2020-11-03T05:14:46.999Z",
+    "patientId": "owFv978TJh",
+    "arrayToDos": [
+      "Enter task"
+    ],
+    "ACL": {
+      "*": {
+        "read": true
+      },
+      "NEMJZRg1SL": {
+        "read": true,
+        "write": true
+      }
+    }
+  },
+  {
+    "objectId": "mt7FJ5JVkj",
+    "last_name": "l",
+    "first_name": "l",
+    "email": "l@gmail.com",
+    "username": "l",
+    "connectToPatient": true,
+    "arrays": [
+      "init"
+    ],
+    "array": [
+      "init"
+    ],
+    "a": [],
+    "createdAt": "2020-11-03T06:10:28.768Z",
+    "updatedAt": "2020-11-03T09:09:23.612Z",
+    "patientId": "owFv978TJh",
+    "arrayToDos": [
+      "Enter task",
+      "ddd"
+    ],
+    "ACL": {
+      "*": {
+        "read": true
+      },
+      "mt7FJ5JVkj": {
+        "read": true,
+        "write": true
+      }
+    }
+  },
+  {
+    "objectId": "hZLZicFKEu",
+    "last_name": "b",
+    "first_name": "b",
+    "email": "b@gmail.com",
+    "username": "b",
+    "connectToPatient": true,
+    "arrays": [
+      "init"
+    ],
+    "array": [
+      "init"
+    ],
+    "a": [],
+    "createdAt": "2020-11-03T09:54:25.526Z",
+    "updatedAt": "2020-11-03T09:54:56.463Z",
+    "patientId": "E9gX4vPbGw",
+    "ACL": {
+      "*": {
+        "read": true
+      },
+      "hZLZicFKEu": {
+        "read": true,
+        "write": true
+      }
+    }
+  },
+  {
+    "objectId": "nCTp3ORwKt",
+    "last_name": "q",
+    "first_name": "q",
+    "email": "q@gmail.com",
+    "username": "q",
+    "connectToPatient": true,
+    "arrays": [
+      "init"
+    ],
+    "array": [
+      "init"
+    ],
+    "a": [],
+    "createdAt": "2020-11-04T02:32:57.510Z",
+    "updatedAt": "2020-11-04T02:33:11.515Z",
+    "patientId": "riXX4MSqwA",
+    "ACL": {
+      "*": {
+        "read": true
+      },
+      "nCTp3ORwKt": {
+        "read": true,
+        "write": true
+      }
+    }
+  },
+  {
+    "objectId": "6a55BWNWSB",
+    "last_name": "e",
+    "first_name": "e",
+    "email": "e@gmail.com",
+    "username": "e",
+    "connectToPatient": true,
+    "arrays": [
+      "init"
+    ],
+    "array": [
+      "init"
+    ],
+    "a": [],
+    "createdAt": "2020-11-04T21:34:10.949Z",
+    "updatedAt": "2020-11-04T22:11:14.396Z",
+    "patientId": "ofxFJeymQM",
+    "ACL": {
+      "*": {
+        "read": true
+      },
+      "6a55BWNWSB": {
+        "read": true,
+        "write": true
+      }
+    }
+  },
+  {
+    "objectId": "DxA779oVqC",
+    "last_name": "o",
+    "first_name": "o",
+    "email": "o@gmail.com",
+    "username": "o",
+    "connectToPatient": false,
+    "arrays": [
+      "init"
+    ],
+    "array": [
+      "init"
+    ],
+    "a": [],
+    "createdAt": "2020-11-05T05:31:24.266Z",
+    "updatedAt": "2020-11-05T05:31:24.266Z",
+    "ACL": {
+      "*": {
+        "read": true
+      },
+      "DxA779oVqC": {
+        "read": true,
+        "write": true
+      }
+    }
+  },
+  {
+    "objectId": "ObMJEPS2Aq",
+    "last_name": "buist",
+    "first_name": "mel",
+    "email": "mlbuist1@gmail.com",
+    "username": "mlbuist",
+    "connectToPatient": false,
+    "arrays": [
+      "init"
+    ],
+    "array": [
+      "init"
+    ],
+    "a": [],
+    "createdAt": "2020-11-05T06:40:58.034Z",
+    "updatedAt": "2020-11-05T06:40:58.034Z",
+    "ACL": {
+      "*": {
+        "read": true
+      },
+      "ObMJEPS2Aq": {
+        "read": true,
+        "write": true
+      }
+    }
+  },
+  {
+    "objectId": "flzCsedGER",
+    "last_name": "v",
+    "first_name": "v",
+    "email": "v@gmail.com",
+    "username": "v",
+    "connectToPatient": true,
+    "arrays": [
+      "init"
+    ],
+    "array": [
+      "init"
+    ],
+    "a": [],
+    "createdAt": "2020-11-05T22:56:03.384Z",
+    "updatedAt": "2020-11-18T03:30:36.580Z",
+    "patientId": "8AqFyXoxQl",
+    "ACL": {
+      "*": {
+        "read": true
+      },
+      "flzCsedGER": {
+        "read": true,
+        "write": true
+      }
+    }
+  },
+  {
+    "objectId": "JjhLqogETC",
+    "last_name": "Clarke",
+    "first_name": "Kieran",
+    "email": "kieranc1414@outlook.com",
+    "username": "kieranc14",
+    "connectToPatient": true,
+    "arrays": [
+      "init"
+    ],
+    "array": [
+      "init"
+    ],
+    "a": [],
+    "createdAt": "2020-11-06T00:44:36.008Z",
+    "updatedAt": "2020-11-06T00:47:52.972Z",
+    "patientId": "hwp9m3ALJG",
+    "ACL": {
+      "*": {
+        "read": true
+      },
+      "JjhLqogETC": {
+        "read": true,
+        "write": true
+      }
+    }
+  },
+  {
+    "objectId": "G2DcTeNEN1",
+    "last_name": "dnndnd",
+    "first_name": "rksjs",
+    "email": "jrjdjd@gmail.com",
+    "username": "jacob123",
+    "connectToPatient": true,
+    "arrays": [
+      "init"
+    ],
+    "array": [
+      "init"
+    ],
+    "a": [],
+    "createdAt": "2020-11-06T02:45:23.706Z",
+    "updatedAt": "2020-11-06T02:45:41.865Z",
+    "patientId": "dOhGyInSZp",
+    "ACL": {
+      "*": {
+        "read": true
+      },
+      "G2DcTeNEN1": {
+        "read": true,
+        "write": true
+      }
+    }
+  },
+  {
+    "objectId": "1oeJe2xsXU",
+    "last_name": "as",
+    "first_name": "as",
+    "email": "as@gmail.com",
+    "username": "asd",
+    "connectToPatient": false,
+    "arrays": [
+      "init"
+    ],
+    "array": [
+      "init"
+    ],
+    "a": [],
+    "createdAt": "2020-11-06T03:54:43.520Z",
+    "updatedAt": "2020-11-06T03:54:43.520Z",
+    "ACL": {
+      "*": {
+        "read": true
+      },
+      "1oeJe2xsXU": {
+        "read": true,
+        "write": true
+      }
+    }
+  },
+  {
+    "objectId": "bvBNDhcxHE",
+    "last_name": "test",
+    "first_name": "test",
+    "email": "test@gmail.com",
+    "username": "testing",
+    "connectToPatient": true,
+    "arrays": [
+      "init"
+    ],
+    "array": [
+      "init"
+    ],
+    "a": [],
+    "createdAt": "2020-11-06T04:28:36.534Z",
+    "updatedAt": "2020-11-06T04:28:50.780Z",
+    "patientId": "U5UqjmsfcA",
+    "ACL": {
+      "*": {
+        "read": true
+      },
+      "bvBNDhcxHE": {
+        "read": true,
+        "write": true
+      }
+    }
+  },
+  {
+    "objectId": "pEGBmCYCtA",
+    "last_name": "jack",
+    "first_name": "john",
+    "email": "johnjack@gmail.com",
+    "username": "johnjack",
+    "connectToPatient": false,
+    "arrays": [
+      "init"
+    ],
+    "array": [
+      "init"
+    ],
+    "a": [],
+    "createdAt": "2020-11-06T05:33:53.247Z",
+    "updatedAt": "2020-11-06T05:33:53.247Z",
+    "ACL": {
+      "*": {
+        "read": true
+      },
+      "pEGBmCYCtA": {
+        "read": true,
+        "write": true
+      }
+    }
+  },
+  {
+    "objectId": "XTaaWEbH8B",
+    "last_name": "clarke",
+    "first_name": "kieran",
+    "email": "kieranc1487@gmail@com",
+    "username": "kieran14",
+    "connectToPatient": true,
+    "arrays": [
+      "init"
+    ],
+    "array": [
+      "init"
+    ],
+    "a": [],
+    "createdAt": "2020-11-06T05:42:40.403Z",
+    "updatedAt": "2020-11-06T05:42:57.857Z",
+    "patientId": "DUbGfhMubo",
+    "ACL": {
+      "*": {
+        "read": true
+      },
+      "XTaaWEbH8B": {
+        "read": true,
+        "write": true
+      }
+    }
+  },
+  {
+    "objectId": "tPgIFiOXPW",
+    "last_name": "abc",
+    "first_name": "abc",
+    "email": "abc@gmail.com",
+    "username": "abc",
+    "connectToPatient": false,
+    "arrays": [
+      "init"
+    ],
+    "array": [
+      "init"
+    ],
+    "a": [],
+    "createdAt": "2020-11-06T06:30:39.390Z",
+    "updatedAt": "2020-11-06T06:30:39.390Z",
+    "ACL": {
+      "*": {
+        "read": true
+      },
+      "tPgIFiOXPW": {
+        "read": true,
+        "write": true
+      }
+    }
+  },
+  {
+    "objectId": "9PaCy6Dwkr",
+    "last_name": "kc",
+    "first_name": "kc",
+    "email": "kckoh@gmail.com",
+    "username": "kck",
+    "connectToPatient": false,
+    "arrays": [
+      "init"
+    ],
+    "array": [
+      "init"
+    ],
+    "a": [],
+    "createdAt": "2020-11-16T10:55:34.213Z",
+    "updatedAt": "2020-11-16T10:55:34.213Z",
+    "ACL": {
+      "*": {
+        "read": true
+      },
+      "9PaCy6Dwkr": {
+        "read": true,
+        "write": true
+      }
+    }
+  },
+  {
+    "objectId": "c3KGPgAsjY",
+    "username": "user",
+    "email": "email@gmial.com",
+    "connectToPatient": false,
+    "arrays": [
+      "init"
+    ],
+    "array": [
+      "init"
+    ],
+    "a": [],
+    "createdAt": "2020-11-29T08:13:48.463Z",
+    "updatedAt": "2020-11-29T08:13:48.463Z",
+    "ACL": {
+      "*": {
+        "read": true
+      },
+      "c3KGPgAsjY": {
+        "read": true,
+        "write": true
+      }
+    }
+  }
+]
+}
