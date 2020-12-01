@@ -1,23 +1,36 @@
 Parse.initialize("Um5azHXQfLSlYJVJqg2pL6SkQcJVXcLPyTNt1V4P", "6b1GVky3F5euaOWpggwgqigBlJ3NHNxswYeFaRyy"); 
 Parse.serverURL = "https://parseapi.back4app.com/";
 
-    var usernameText;
+    var loginUsernameText;
     var passwordText;
+    var savedLoginUsernameText;
+    var savedPasswordText;
     var firstnameText;
     var lastnameText;
     var usernameText;
     var emailText;
     var passwordText;
 
+    
+    
+
 function login() {
-    usernameText = document.getElementById("username").value.toString();
+
+    loginUsernameText = document.getElementById("username").value.toString();
     passwordText = document.getElementById("password").value.toString();
+
+    localStorage.setItem("savedUsername", loginUsernameText);
+    localStorage.setItem("savedPassword", passwordText);
+
+    //alert((loginUsernameText));
+    //alert((passwordText));
+
 
     // Create a new instance of the user class
     var user = Parse.User
-    .logIn(usernameText, passwordText).then(function(user) {
+    .logIn(loginUsernameText, passwordText).then(function(user) {
     window.location.href = 'taskPage.html';
-    alert('Login: ' + user.get("username") + ' and email: ' + user.get("email"));
+    //alert('Login: ' + user.get("username") + ' and email: ' + user.get("email"));
     }).catch(function(error){
     console.log("Error: " + error.code + " " + error.message);
     });
@@ -37,8 +50,9 @@ function signUp(){
             username: usernameText,
             email: emailText,
             password: passwordText
-        }).then(function(response) {window.location.href = 'login.html';
-            alert('New object create with success! ObjectId: ' + response.id + ', '+ user.get('username'));
+        }).then(function(response) {
+            //alert('New object create with success! ObjectId: ' + response.id + ', '+ user.get('username'));
+            window.location.href = 'login.html';
         }).catch(function(error) {
             alert('Error: ' + error.message);
         });
@@ -67,53 +81,69 @@ function deleteAndRefresh() {
 async function addTask(){
 
     var addTaskText = document.getElementById("add_task").value.toString();
-            
-    var user = Parse.User
-        .logIn("123", "123").then(function(user) {
-                console.log('User created successful with name: ' + user.get("username") + ' and email: ' + user.get("email"));
-                user.addUnique('Tasks', addTaskText);
-                user.save();
 
-                
-        }).catch(function(error){
-                console.log("Error: " + error.code + " " + error.message);
-            });      
+    savedLoginUsernameText = localStorage.getItem("savedUsername");
+    savedPasswordText = localStorage.getItem("savedPassword");
+    
+    var user = Parse.User
+    .logIn(savedLoginUsernameText, savedPasswordText).then(function(user) {
+        console.log('User created successful with name: ' + user.get("username") + ' and email: ' + user.get("email"));
+        user.addUnique('Tasks', addTaskText);
+        user.save();
+    
+        
+    
+    }).catch(function(error){
+        console.log("Error: " + error.code + " " + error.message);
+    });
+    
 }
 
 
 async function deleteTask(){
     var addTaskText = document.getElementById("add_task").value.toString();
-            
+
+    savedLoginUsernameText = localStorage.getItem("savedUsername");
+    savedPasswordText = localStorage.getItem("savedPassword");
+    
     var user = Parse.User
-        .logIn(usernameText, passwordText).then(function(user) {
-            console.log('User created successful with name: ' + user.get("username") + ' and email: ' + user.get("email"));
-            user.remove('Tasks', addTaskText);
-            
-            user.save();
+    .logIn(savedLoginUsernameText, savedPasswordText).then(function(user) {
+    console.log('User created successful with name: ' + user.get("username") + ' and email: ' + user.get("email"));
+    user.remove('Tasks', addTaskText);
+    
+    user.save();
     }).catch(function(error){
-                console.log("Error: " + error.code + " " + error.message);
-            });
+        console.log("Error: " + error.code + " " + error.message);
+    });
 }
+
 
 async function editTask(){
     var addTaskText = document.getElementById("add_task").value.toString();
-            
+
+    savedLoginUsernameText = localStorage.getItem("savedUsername");
+    savedPasswordText = localStorage.getItem("savedPassword");
+    
     var user = Parse.User
-        .logIn("123", "123").then(function(user) {
-            console.log('User created successful with name: ' + user.get("username") + ' and email: ' + user.get("email"));
-            
-            user.remove('Tasks', addTaskText);
-            
-            user.save();
-            }).catch(function(error){
-               console.log("Error: " + error.code + " " + error.message);
-            });
+    .logIn(savedLoginUsernameText, savedPasswordText).then(function(user) {
+    console.log('User created successful with name: ' + user.get("username") + ' and email: ' + user.get("email"));
+    
+    user.remove('Tasks', addTaskText);
+    
+    user.save();
+    }).catch(function(error){
+        console.log("Error: " + error.code + " " + error.message);
+    });
 }
 
 function showTableOnLoad() {
+
+    savedLoginUsernameText = localStorage.getItem("savedUsername");
+    savedPasswordText = localStorage.getItem("savedPassword");
+
     var user = Parse.User
-        .logIn(usernameText, passwordText).then(function(user) {
-            console.log('User created successful with name: ' + user.get("username") + ' and email: ' + user.get("email"));
+        .logIn(savedLoginUsernameText, savedPasswordText).then(function(user) {
+        console.log('User created successful with name: ' + user.get("username") + ' and email: ' + user.get("email"));
 
     var arr = user.get('Tasks'),
         table = document.getElementsByTagName('table')[0],
@@ -121,28 +151,30 @@ function showTableOnLoad() {
         td = null,
         txt = '';
 
-        for (var i = 0; i < arr.length; i++) {
-            var newButton  = document.createElement("BUTTON");
-            newButton.id = i;
+    for (var i = 0; i < arr.length; i++) {
 
-            newButton.innerHTML = "Edit";
-            newButton.addEventListener("click", function(e) {
-                e.preventDefault();
-                add_task.value = arr[this.id];    
-                editTask();
-            });
+        var newButton  = document.createElement("BUTTON");
+        newButton.id = i;
 
+        newButton.innerHTML = "Edit";
+        newButton.addEventListener("click", function(e) {
+            e.preventDefault();
+            add_task.value = arr[this.id];
+            editTask();
 
-            txt = document.createTextNode(" " + arr[i]);
-            td = document.createElement('td');
-            tr = document.createElement('tr');
-            td.appendChild(newButton);
-            td.appendChild(txt);
-            tr.appendChild(td);
-            table.appendChild(tr);
-        }
-
-        }).catch(function(error){
-            console.log("Error: " + error.code + " " + error.message);
         });
+        
+        txt = document.createTextNode(" " + arr[i]);
+        td = document.createElement('td');
+        tr = document.createElement('tr');
+        td.appendChild(newButton);
+        td.appendChild(txt);
+        tr.appendChild(td);
+        table.appendChild(tr);
+
+    }
+
+    }).catch(function(error){
+        console.log("Error: " + error.code + " " + error.message);
+    });
 }

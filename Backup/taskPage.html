@@ -76,8 +76,8 @@
 
     </div>
 
-    <script>
-        /*
+    <!--<script>
+
         
         
         Parse.initialize("Um5azHXQfLSlYJVJqg2pL6SkQcJVXcLPyTNt1V4P", "6b1GVky3F5euaOWpggwgqigBlJ3NHNxswYeFaRyy"); 
@@ -99,8 +99,6 @@
             deleteTask();
             setTimeout(function(){refresh();}, 1000);
         }
-
-
 
 
 
@@ -138,24 +136,8 @@
         }
 
 
-        async function editTask(){
-            var addTaskText = document.getElementById("add_task").value.toString();
-            
-            var user = Parse.User
-        .logIn("123", "123").then(function(user) {
-            console.log('User created successful with name: ' + user.get("username") + ' and email: ' + user.get("email"));
-            
-            user.remove('Tasks', addTaskText);
-            
-            user.save();
-            }).catch(function(error){
-                console.log("Error: " + error.code + " " + error.message);
-            });
-        }
 
-
-
-
+        
 
         function showTableOnLoad() {
         var user = Parse.User
@@ -177,11 +159,8 @@
                 newButton.addEventListener("click", function(e) {
                     e.preventDefault();
                     add_task.value = arr[this.id];
-                    editTask();
-
+                    
                 });
-                
-                
 
 
                 txt = document.createTextNode(" " + arr[i]);
@@ -198,10 +177,10 @@
                 console.log("Error: " + error.code + " " + error.message);
             });
         }
-    */
+
 
             
-    </script>
+    </script>-->
 
 
 

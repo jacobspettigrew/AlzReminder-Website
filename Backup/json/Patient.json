@@ -1,0 +1,240 @@
+{
+"results" : [
+
+  {
+    "objectId": "E9vbSqQjMB",
+    "init": true,
+    "connectToUser": true,
+    "createdAt": "2020-11-01T17:20:43.298Z",
+    "updatedAt": "2020-11-01T20:05:47.752Z",
+    "uniqueId": "a"
+  },
+  {
+    "objectId": "xYEA1VLYjy",
+    "init": true,
+    "connectToUser": true,
+    "createdAt": "2020-11-01T17:21:20.853Z",
+    "updatedAt": "2020-11-04T06:03:57.847Z",
+    "uniqueId": "k",
+    "arrayToDos": [
+      "Enter task"
+    ]
+  },
+  {
+    "objectId": "I5fMjXNx4x",
+    "init": true,
+    "connectToUser": true,
+    "createdAt": "2020-11-01T17:24:38.799Z",
+    "updatedAt": "2020-11-01T20:10:28.131Z",
+    "uniqueId": "bc"
+  },
+  {
+    "objectId": "pUb5w9q8ah",
+    "init": true,
+    "connectToUser": true,
+    "createdAt": "2020-11-01T17:25:27.804Z",
+    "updatedAt": "2020-11-03T04:52:07.889Z",
+    "uniqueId": "jk"
+  },
+  {
+    "objectId": "jAQBQrC6r7",
+    "init": true,
+    "connectToUser": true,
+    "createdAt": "2020-11-01T17:31:33.085Z",
+    "updatedAt": "2020-11-01T20:11:03.266Z",
+    "uniqueId": "cd"
+  },
+  {
+    "objectId": "EWlqzLPEut",
+    "init": true,
+    "uniqueId": "Njommhk",
+    "connectToUser": true,
+    "createdAt": "2020-11-03T04:12:44.504Z",
+    "updatedAt": "2020-11-03T04:45:12.144Z"
+  },
+  {
+    "objectId": "yLRmE9xSFl",
+    "init": true,
+    "uniqueId": "j6qHcur",
+    "connectToUser": true,
+    "createdAt": "2020-11-03T04:13:19.714Z",
+    "updatedAt": "2020-11-03T04:29:42.398Z"
+  },
+  {
+    "objectId": "owFv978TJh",
+    "init": true,
+    "uniqueId": "zQWeB1L",
+    "connectToUser": true,
+    "createdAt": "2020-11-03T05:12:29.931Z",
+    "updatedAt": "2020-11-13T10:46:27.426Z",
+    "arrayToDos": [
+      "Enter taskxfhj",
+      "s",
+      "Enter task"
+    ]
+  },
+  {
+    "objectId": "E9gX4vPbGw",
+    "init": true,
+    "uniqueId": "ZDrP1d0",
+    "connectToUser": true,
+    "createdAt": "2020-11-03T09:52:41.681Z",
+    "updatedAt": "2020-11-03T15:27:48.334Z",
+    "arrayToDos": [
+      "Enter task",
+      "Enter tasks"
+    ]
+  },
+  {
+    "objectId": "OI60CNLj2Q",
+    "init": true,
+    "uniqueId": "oXbZyAB",
+    "connectToUser": true,
+    "createdAt": "2020-11-03T10:02:25.157Z",
+    "updatedAt": "2020-11-03T10:02:47.159Z",
+    "arrayToDos": [
+      "new"
+    ]
+  },
+  {
+    "objectId": "DK11aGjYjq",
+    "init": true,
+    "uniqueId": "cTClvz1",
+    "connectToUser": false,
+    "createdAt": "2020-11-03T10:04:50.198Z",
+    "updatedAt": "2020-11-03T10:04:50.198Z"
+  },
+  {
+    "objectId": "A5KFlKw4mE",
+    "init": true,
+    "uniqueId": "C2p4wXv",
+    "connectToUser": false,
+    "createdAt": "2020-11-03T10:06:24.873Z",
+    "updatedAt": "2020-11-03T10:06:24.873Z"
+  },
+  {
+    "objectId": "HYK1AmYgPG",
+    "init": true,
+    "uniqueId": "PGGV75E",
+    "connectToUser": false,
+    "createdAt": "2020-11-03T10:06:58.681Z",
+    "updatedAt": "2020-11-03T10:06:58.681Z"
+  },
+  {
+    "objectId": "1Fbj0TzFvZ",
+    "init": true,
+    "uniqueId": "KAsORIE",
+    "connectToUser": false,
+    "createdAt": "2020-11-03T10:09:11.521Z",
+    "updatedAt": "2020-11-03T10:09:11.521Z"
+  },
+  {
+    "objectId": "tpNDCbUNhX",
+    "init": true,
+    "uniqueId": "CUkvg0b",
+    "connectToUser": true,
+    "createdAt": "2020-11-03T10:10:12.573Z",
+    "updatedAt": "2020-11-03T10:11:14.740Z",
+    "arrayToDos": [
+      "addd",
+      "dsdfas"
+    ]
+  },
+  {
+    "objectId": "brZvh2t8Np",
+    "init": true,
+    "uniqueId": "2022lOt",
+    "connectToUser": false,
+    "createdAt": "2020-11-03T15:47:51.165Z",
+    "updatedAt": "2020-11-03T15:47:51.165Z"
+  },
+  {
+    "objectId": "riXX4MSqwA",
+    "init": true,
+    "uniqueId": "4lHgryR",
+    "connectToUser": true,
+    "createdAt": "2020-11-03T15:52:06.277Z",
+    "updatedAt": "2020-11-18T14:47:13.607Z",
+    "arrayToDos": [
+      "abc"
+    ]
+  },
+  {
+    "objectId": "ebA2RLXmyi",
+    "uniqueId": "gCQMxmS",
+    "init": true,
+    "connectToUser": true,
+    "createdAt": "2020-11-04T20:56:29.376Z",
+    "updatedAt": "2020-11-28T05:49:01.578Z",
+    "arrayToDos": [
+      "Dishes",
+      "Walking",
+      "Exercise",
+      "Enter task",
+      "Running"
+    ]
+  },
+  {
+    "objectId": "ofxFJeymQM",
+    "init": true,
+    "uniqueId": "smaLJso",
+    "connectToUser": true,
+    "createdAt": "2020-11-04T21:28:26.982Z",
+    "updatedAt": "2020-11-04T22:40:39.248Z",
+    "arrayToDos": [
+      "sdd"
+    ]
+  },
+  {
+    "objectId": "hwp9m3ALJG",
+    "init": true,
+    "connectToUser": true,
+    "createdAt": "2020-11-06T00:47:21.520Z",
+    "updatedAt": "2020-11-06T04:25:25.047Z",
+    "uniqueId": "abcde",
+    "arrayToDos": []
+  },
+  {
+    "objectId": "dOhGyInSZp",
+    "init": true,
+    "uniqueId": "51aSQt7",
+    "connectToUser": true,
+    "createdAt": "2020-11-06T02:42:53.164Z",
+    "updatedAt": "2020-11-06T02:46:50.300Z",
+    "arrayToDos": []
+  },
+  {
+    "objectId": "U5UqjmsfcA",
+    "init": true,
+    "uniqueId": "kAUJI2p",
+    "connectToUser": true,
+    "createdAt": "2020-11-06T03:56:46.059Z",
+    "updatedAt": "2020-11-06T04:29:28.657Z",
+    "arrayToDos": [
+      "Running",
+      "Exercise",
+      "Reading"
+    ]
+  },
+  {
+    "objectId": "DUbGfhMubo",
+    "init": true,
+    "uniqueId": "T2bB6zg",
+    "connectToUser": true,
+    "createdAt": "2020-11-06T05:40:00.104Z",
+    "updatedAt": "2020-11-06T05:59:17.065Z",
+    "arrayToDos": []
+  },
+  {
+    "objectId": "8AqFyXoxQl",
+    "init": true,
+    "uniqueId": "AweqQ5H",
+    "connectToUser": true,
+    "createdAt": "2020-11-17T08:21:08.469Z",
+    "updatedAt": "2020-11-28T05:55:14.467Z",
+    "arrayToDos": [
+      "asd"
+    ]
+  }
+]
+}
