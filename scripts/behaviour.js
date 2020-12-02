@@ -1,4 +1,8 @@
+
 Parse.initialize("ppUUKGXynkwsUpbZRR6bij1SYvqea45AMYUj70xJ", "GNLPxJd50SFbyePttb0k6L1ZnoiRpWRrsoF4ZZlU"); 
+
+Parse.initialize("Um5azHXQfLSlYJVJqg2pL6SkQcJVXcLPyTNt1V4P", "6b1GVky3F5euaOWpggwgqigBlJ3NHNxswYeFaRyy"); 
+
 Parse.serverURL = "https://parseapi.back4app.com/";
 
     var loginUsernameText;
@@ -10,8 +14,10 @@ Parse.serverURL = "https://parseapi.back4app.com/";
     var usernameText;
     var emailText;
     var passwordText;
+
     var patientId;
     var query;
+
     
 
 function login() {
@@ -21,7 +27,9 @@ function login() {
 
     localStorage.setItem("savedUsername", loginUsernameText);
     localStorage.setItem("savedPassword", passwordText);
+
     localStorage.setItem("savedPatientId",patientId);
+
 
     //alert((loginUsernameText));
     //alert((passwordText));
@@ -31,10 +39,12 @@ function login() {
     var user = Parse.User
     .logIn(loginUsernameText, passwordText).then(function(user) {
     window.location.href = 'taskPage.html';
+
     patientId = user.get("patientId");
         console.log(patientId);
         
     //alert('Login: ' + user.get("username") + ' and email: ' + user.get("email"));
+
 
     }).catch(function(error){
     console.log("Error: " + error.code + " " + error.message);
@@ -47,7 +57,6 @@ function signUp(){
     usernameText = document.getElementById("username").value.toString();
     emailText =  document.getElementById("email").value.toString();
     passwordText = document.getElementById("password").value.toString();
-    
 
     var user = new Parse.User();
         user.save({
@@ -75,13 +84,18 @@ function refresh() {
 
 function addAndRefresh() {
     addTask();
+
     //setTimeout(function(){refresh();}, 1000);
+
+    setTimeout(function(){refresh();}, 1000);
+
 }
 
 function deleteAndRefresh() {
     deleteTask();
     setTimeout(function(){refresh();}, 1000);
 }
+
 
 
 async function addTaskToTheDatabase(objectId){
@@ -109,13 +123,13 @@ async function addTaskToTheDatabase(objectId){
 }
 
 
-
 async function addTask(){
 
     var addTaskText = document.getElementById("add_task").value.toString();
 
     savedLoginUsernameText = localStorage.getItem("savedUsername");
     savedPasswordText = localStorage.getItem("savedPassword");
+
     patientId = localStorage.getItem("savedPatientId");
 
     
@@ -154,6 +168,21 @@ async function deleteTaskToTheDatabase(objectId){
     
     patient.remove('arrayToDos', addTaskText);
     patient.save();
+
+    
+    var user = Parse.User
+    .logIn(savedLoginUsernameText, savedPasswordText).then(function(user) {
+        console.log('User created successful with name: ' + user.get("username") + ' and email: ' + user.get("email"));
+        user.addUnique('Tasks', addTaskText);
+        user.save();
+    
+        
+    
+    }).catch(function(error){
+        console.log("Error: " + error.code + " " + error.message);
+    });
+    
+
 }
 
 
@@ -166,9 +195,15 @@ async function deleteTask(){
     var user = Parse.User
     .logIn(savedLoginUsernameText, savedPasswordText).then(function(user) {
     console.log('User created successful with name: ' + user.get("username") + ' and email: ' + user.get("email"));
+
         var id = user.get("patientId")
         deleteTaskToTheDatabase(id);
     
+
+    user.remove('Tasks', addTaskText);
+    
+    user.save();
+
     }).catch(function(error){
         console.log("Error: " + error.code + " " + error.message);
     });
@@ -185,9 +220,10 @@ async function editTask(){
     .logIn(savedLoginUsernameText, savedPasswordText).then(function(user) {
     console.log('User created successful with name: ' + user.get("username") + ' and email: ' + user.get("email"));
     
+
     var id = user.get("patientId")
         deleteTaskToTheDatabase(id);
-    user.remove('arrayToDos', addTaskText);
+
     
     user.save();
     }).catch(function(error){
@@ -201,6 +237,7 @@ async function returnArrayToDos(objectId){
     let patient = await query.get(objectId)
     //alert(patient.get("arrayToDos"))
     var arr = patient.get("arrayToDos"),
+
         table = document.getElementsByTagName('table')[0],
         tr = null,
         td = null,
@@ -216,6 +253,7 @@ async function returnArrayToDos(objectId){
             e.preventDefault();
             add_task.value = arr[this.id];
             editTask();
+
         });
         
         txt = document.createTextNode(" " + arr[i]);
@@ -225,6 +263,7 @@ async function returnArrayToDos(objectId){
         td.appendChild(txt);
         tr.appendChild(td);
         table.appendChild(tr);
+
     }
    
 }
@@ -238,6 +277,7 @@ async function showTableOnLoad() {
         .logIn(savedLoginUsernameText, savedPasswordText).then(function(user) {
         console.log('User created successful with name: ' + user.get("username") + ' and email: ' + user.get("email"));
    returnArrayToDos(user.get("patientId"));
+
 
 
     }).catch(function(error){
